@@ -842,11 +842,11 @@ img::-moz-selection {
 
 /*Collapse Menu Top Right <768px*/
 
-.container input {
+.navbar-default .navbar-toggle .container input {
     display: none;
 }
 
-.container label {
+.navbar-default .navbar-toggle .container label {
     margin-top: -10px;
     margin-bottom: -10px;
     position: relative;
@@ -859,8 +859,8 @@ img::-moz-selection {
 
 /* Exit Icon */
 
-.container label:before,
-.container input:checked + label:before {
+.navbar-default .navbar-toggle .container label:before,
+.navbar-default .navbar-toggle .container input:checked + label:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -871,7 +871,7 @@ img::-moz-selection {
     background: #fff;
 }
 
-.container label:before {
+.navbar-default .navbar-toggle .container label:before {
     -webkit-animation: animationOneReverse 1s ease forwards;
     animation: animationOneReverse 1s ease forwards;
 }
@@ -887,7 +887,7 @@ img::-moz-selection {
     50%, 100% { transform: rotate(0deg); }
 }
 
-.container input:checked + label:before {
+.navbar-default .navbar-toggle .container input:checked + label:before {
     -webkit-animation: animationOne 1s ease forwards;
     animation: animationOne 1s ease forwards;
 }
@@ -903,8 +903,8 @@ img::-moz-selection {
     100% { transform: rotate(315deg); }
 }
 
-.container label:after,
-.container input:checked + label:after {
+.navbar-default .navbar-toggle .container label:after,
+.navbar-default .navbar-toggle .container input:checked + label:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -915,7 +915,7 @@ img::-moz-selection {
     background: #fff;
 }
 
-.container label:after {
+.navbar-default .navbar-toggle .container label:after {
     -webkit-animation: animationTwoReverse 1s ease forwards;
     animation: animationTwoReverse 1s ease forwards;
 }
@@ -931,7 +931,7 @@ img::-moz-selection {
     50%, 100% { transform: rotate(0deg); }
 }
 
-.container input:checked + label:after {
+.navbar-default .navbar-toggle .container input:checked + label:after {
     -webkit-animation: animationTwo 1s ease forwards;
     animation: animationTwo 1s ease forwards;
 }
@@ -949,7 +949,7 @@ img::-moz-selection {
 
 /* Burger Icon */
 
-.container label .burger:before {
+.navbar-default .navbar-toggle .container label .burger:before {
     content: '';
     position: absolute;
     top: 6px;
@@ -972,7 +972,7 @@ img::-moz-selection {
     100% { transform: translateY(0px); opacity: 1; }
 }
 
-.container input:checked + label .burger:before {
+.navbar-default .navbar-toggle .container input:checked + label .burger:before {
     -webkit-animation: animationBurgerTop 1s ease forwards;
     animation: animationBurgerTop 1s ease forwards;
 }
@@ -988,7 +988,7 @@ img::-moz-selection {
     51%, 100% { transform: translateY(12px); opacity: 0; }
 }
 
-.container label .burger:after {
+.navbar-default .navbar-toggle .container label .burger:after {
     content: '';
     position: absolute;
     bottom: 6px;
@@ -1011,7 +1011,7 @@ img::-moz-selection {
     100% { transform: translateY(0px); opacity: 1; }
 }
 
-.container input:checked + label .burger:after {
+.navbar-default .navbar-toggle .container input:checked + label .burger:after {
     -webkit-animation: animationBurgerBottom 1s ease forwards;
     animation: animationBurgerBottom 1s ease forwards;
 }
