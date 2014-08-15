@@ -15,7 +15,7 @@ if(empty($_POST['name'])      ||
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $phone = $_POST['phone'];
-$message = $_POST['message'];
+$email_message = $_POST['message'];
 
 
 
@@ -26,8 +26,8 @@ $message = new SendGrid\Email();
 $message->addTo('chris.wong0929@gmail.com')->
           setFrom($email_address)->
           setSubject('Message from Personal Website')->
-          setText($message)->
-          setHtml($message);
+          setText($email_message)->
+          setHtml($email_message);
 $response = $sendgrid->send($message);
 
    
