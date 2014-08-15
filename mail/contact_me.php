@@ -22,11 +22,5 @@ $email_body = "You have received a new message from your website contact form.\n
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";   
 $retval = mail($to,$email_subject,$email_body,$headers);
-if ($retval == true){
-	echo "Message sent";
-}
-else{
-	echo "Message Failed";
-}
-return true;         
+return $retval;         
 ?>
