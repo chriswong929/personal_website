@@ -20,15 +20,15 @@ require '../vendor/autoload.php';
 
 
 
-// $sendgrid = new SendGrid('app28496374@heroku.com', 'gq9tox4l');
-// $message = new SendGrid\Email();
+$sendgrid = new SendGrid('app28496374@heroku.com', 'gq9tox4l');
+$message = new SendGrid\Email();
 
-// $message->addTo('chris.wong0929@gmail.com')->
-//           setFrom('anotheremail@gmail.com')->
-//           setSubject('Subject goes here')->
-//           setText('Hello World!')->
-//           setHtml('<strong>Hello World!</strong>');
-// $response = $sendgrid->send($message);
+$message->addTo('chris.wong0929@gmail.com')->
+          setFrom('anotheremail@gmail.com')->
+          setSubject('Subject goes here')->
+          setText('Hello World!')->
+          setHtml('<strong>Hello World!</strong>');
+$response = $sendgrid->send($message);
 
    
 // Create the email and send the message
