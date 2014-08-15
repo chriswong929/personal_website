@@ -102,17 +102,17 @@
     },
     {
         "name": "sendgrid/sendgrid",
-        "version": "2.0.5",
-        "version_normalized": "2.0.5.0",
+        "version": "2.1.1",
+        "version_normalized": "2.1.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sendgrid/sendgrid-php.git",
-            "reference": "4899267531645d970675edc446f03fef20a5a931"
+            "reference": "3fba6604d46c584547762c0ececdd98ea78709dd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/4899267531645d970675edc446f03fef20a5a931",
-            "reference": "4899267531645d970675edc446f03fef20a5a931",
+            "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/3fba6604d46c584547762c0ececdd98ea78709dd",
+            "reference": "3fba6604d46c584547762c0ececdd98ea78709dd",
             "shasum": ""
         },
         "require": {
@@ -127,7 +127,7 @@
             "phpunit/phpunit": "3.7.*",
             "vlucas/phpdotenv": "1.0.2"
         },
-        "time": "2014-04-18 17:23:19",
+        "time": "2014-07-17 17:19:22",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

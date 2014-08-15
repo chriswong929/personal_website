@@ -3,12 +3,23 @@
 class SendGridTest_SendGrid extends PHPUnit_Framework_TestCase {
 
   public function testVersion() {
-    $this->assertEquals(SendGrid::VERSION, "2.0.5");
+    $this->assertEquals(SendGrid::VERSION, "2.1.1");
   }
 
   public function testInitialization() {
     $sendgrid = new SendGrid("user", "pass");
     $this->assertEquals("SendGrid", get_class($sendgrid));
+  }
+
+  public function testDefaultURL() {
+    $sendgrid = new SendGrid("user", "pass");
+    $this->assertEquals("https://api.sendgrid.com/api/mail.send.json", $sendgrid->url);
+  }
+
+  public function testCustomURL() {
+    $options = array( "protocol" => "http", "host" => "sendgrid.org", "endpoint" => "/send", "port" => "80" );
+    $sendgrid = new SendGrid("user", "pass", $options);
+    $this->assertEquals("http://sendgrid.org:80/send", $sendgrid->url);
   }
 
   public function testSendResponse() {
