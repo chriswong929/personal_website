@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d4a15fd782cf79e0b827060efb523ec9",
+    "hash": "329612600283e82e3adec0e4a30d6bba",
     "packages": [
         {
             "name": "mashape/unirest-php",
@@ -57,16 +57,16 @@
         },
         {
             "name": "sendgrid/sendgrid",
-            "version": "2.0.5",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sendgrid/sendgrid-php.git",
-                "reference": "4899267531645d970675edc446f03fef20a5a931"
+                "reference": "3fba6604d46c584547762c0ececdd98ea78709dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/4899267531645d970675edc446f03fef20a5a931",
-                "reference": "4899267531645d970675edc446f03fef20a5a931",
+                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/3fba6604d46c584547762c0ececdd98ea78709dd",
+                "reference": "3fba6604d46c584547762c0ececdd98ea78709dd",
                 "shasum": ""
             },
             "require": {
@@ -99,7 +99,7 @@
                 "send",
                 "sendgrid"
             ],
-            "time": "2014-04-18 17:23:19"
+            "time": "2014-07-17 17:19:22"
         },
         {
             "name": "sendgrid/smtpapi",
