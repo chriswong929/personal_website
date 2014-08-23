@@ -34,7 +34,7 @@ $(document).ready(function(){
 		cursorOn: false,
 		callback: function(){
 			$('#typing2').typed({
-				strings: ["^750I am a student.", "I am a hacker.", "I am a developer.", "I am a website designer.", "I am a computer engineer.^200"],
+				strings: ["^750I am a student.", "I am a developer.", "I am a website designer.", "I am a computer engineer.^200"],
 				stopNum: 6,
 				backDelay: 500,
 				cursorOn: false,

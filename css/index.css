@@ -355,7 +355,18 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-color: #222;
+    /*background-image: url(../img/toronto_at_night_black_and_white_edit_by_falcon912-d5nkmrv.jpg);*/
+    /*background-color: rgba(0,0,0,0.7);*/
+    /*opacity: 0.3;*/
+    /*background-color: #222;*/
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
+    ),
+
+    url(../img/Toronto_Wallpaper.jpg);
+
     background-position: center center;
     background-repeat: repeat-y;
     -webkit-background-size: cover;
@@ -367,6 +378,7 @@ header {
 
 header .fade_in_txt{
     display:none;
+    padding-top: 50px;
 }
 
 header .intro-text {
@@ -391,10 +403,24 @@ header .intro-text .intro-heading {
 }
 
 header .intro-text .intro-scroll{
-    padding-top: 150px;
+    padding-top: 75px;
 }
 
 
+header .btn-xl,
+header .btn-xl.active,
+header .btn-xl:focus{
+    float: none;
+    color: #fff;
+    border-color: #fff;
+}
+
+header .btn-xl:hover,
+header .open .dropdown-toggle.btn-xl{
+    background-color: #fff;
+    border: thin solid #fff;
+    color: #222;
+}
 
 .fa-angle-double-down{
     width:60px;
