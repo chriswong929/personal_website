@@ -27,23 +27,3 @@ $('.navbar-collapse ul li a').click(function() {
     	$('#click').click();
 });
 
-$(document).ready(function(){
-	$('#typing').typed({
-		strings: [" Hello World!^200"],
-		typeSpeed: 50,
-		cursorOn: false,
-		callback: function(){
-			$('#typing2').typed({
-				strings: ["^750I am a student.", "I am a developer.", "I am a website designer.", "I am a computer engineer.^200"],
-				stopNum: 6,
-				backDelay: 500,
-				cursorOn: false,
-				callback: function(){
-					$('.fade_in_txt').delay(100).fadeIn(4000);
-				}
-			});
-		}
-	});
-	
-});
-

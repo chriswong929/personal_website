@@ -10,7 +10,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Open Sans","Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 html,body{
@@ -218,6 +218,11 @@ fieldset[disabled] .btn-xl.active {
     -o-transition: color .25s;
     transition: color .25s;
 }
+@media(max-width: 768px){
+    .navbar-default.navbar-shrink #cssmenu ul li a{
+        color: #fff;
+    }
+}
 
 .navbar-default.navbar-shrink #cssmenu ul li a:hover {
   color:rgb(59,134,134);
@@ -368,10 +373,6 @@ fieldset[disabled] .btn-xl.active {
         color: rgb(59,134,134);
     }
 
-    /*Top right elements when it is out of the header*/
-    .navbar-default.navbar-shrink .nav li a{
-        color:#fff;
-    }
     .navbar-default.navbar-shrink .nav li a:hover,
     .navbar-default.navbar-shrink .nav li a:focus{
         background-color: transparent;
@@ -382,18 +383,12 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    /*background-image: url(../img/toronto_at_night_black_and_white_edit_by_falcon912-d5nkmrv.jpg);*/
-    /*background-color: rgba(0,0,0,0.7);*/
-    /*opacity: 0.3;*/
-    /*background-color: #222;*/
     background: 
     linear-gradient(
       rgba(0, 0, 0, 0.75), 
       rgba(0, 0, 0, 0.75)
     ),
-
     url(../img/Toronto_Wallpaper.jpg);
-
     background-position: center center;
     background-repeat: repeat-y;
     -webkit-background-size: cover;
@@ -403,33 +398,29 @@ header {
     min-height: 100%;
 }
 
-header .fade_in_txt{
-    display:none;
-    padding-top: 50px;
-}
-
-
-header .intro-text .intro-lead-in {
-    margin-bottom: 50px;
-    font-size: 18px;
-    line-height: 22px;
-    margin-right: -10px;
-}
-
 header .intro-text .intro-heading h1{
-    margin-bottom: 25px;
-    font-size: 60px;
-    font-weight: 700;
-    margin-top: -10px;
-    /*line-height: 30px;*/
+    margin-bottom: 50px;
+    font-size: 45px;
+    position: relative;
+    margin-top: 200px;
 }
-@media(max-width:768px){
-    header .intro-text .intro-heading h1{
-        margin-top: 80px;
-    }
+
+header .intro-text .intro-lead-in h2{
+    font-size: 25px;
+    margin-bottom: 80px;
 }
+
 header .intro-text .intro-scroll{
-    margin-top: 50px;
+    margin-top: 80px;
+}
+
+@media(max-width:992px){
+    header .intro-text .intro-heading h1{
+        margin-top: 160px;
+    }
+    header .intro-text .intro-lead-in h2{
+        font-size: 20px;
+    }
 }
 
 
@@ -462,27 +453,6 @@ header .open .dropdown-toggle.btn-xl{
     -ms-transition: all .5s ease;
     transition: all .5s ease;
     color: rgb(59,134,134);
-}
-
-@media(min-width:768px) {
-    header .intro-text {
-        position: relative;
-        padding-top: 200px;
-    }
-
-    header .intro-text .intro-lead-in {
-        font-family: Montserrat, "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        font-family: "Press Start 2P",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 45px;
-        font-weight: 700;
-        line-height: 75px;
-    }
 }
 
 
@@ -642,17 +612,6 @@ section#portfolio .portfolio-item .portfolio-hover-content .text-muted{
     background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
-    margin: 0;
-    text-transform: none;
-}
-
-#portfolio .portfolio-item .portfolio-caption p {
-    margin: 0;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
-}
 
 #portfolio * {
     z-index: 2;
@@ -840,7 +799,7 @@ ul.social-buttons li a:hover {
 .portfolio-modal a{
     font-weight: bold;
     font-style: italic;
-    color: #222;
+    color: rgb(59,134,134);
 }
 
 .portfolio-modal .modal-content {
