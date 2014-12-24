@@ -63,7 +63,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: #F2F2F2;
 }
 
 .btn-primary {
@@ -122,7 +122,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
-    border:thin solid #AAB0B3;
+    border:thin solid #fff;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
@@ -664,6 +664,24 @@ section#portfolio .portfolio-item .portfolio-hover-content .text-muted{
     }
 }
 
+section#contact{
+    background-attachment: scroll;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
+    ),
+
+    url(../img/Nathan_Phillips_square.jpg);
+
+    background-position: center center;
+    background-repeat: repeat-y;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 /*Align the contact section to the center when they're stacked*/
 section#contact .col-md-4{
     margin-bottom: 100px;
@@ -671,21 +689,18 @@ section#contact .col-md-4{
 }
 
 section#contact .section-heading {
-    color: #222;
+    color: #fff;
     margin-bottom: 50px;
 }
 
 /*Align the contact section to the left if they're side by side*/
 @media(min-width: 992px){
     section#contact .col-md-4{
-        margin-bottom: 100px;
         text-align: left;
     }
 
     section#contact .section-heading {
-        color: #222;
         text-align: left;
-        margin-bottom: 50px;
     }
 
     .btn-xl{
@@ -695,15 +710,17 @@ section#contact .section-heading {
 }
 section#contact .section-heading span {
     padding-bottom: 15px;
-    border-bottom: thin solid #AAB0B3;
+    border-bottom: thin solid #fff;
 }
 
 
 section#contact p{
     font-size: 110%;
-    color:#7F8C8D;
+    color:#fff;
 }
-
+section#contact .glyphicon{
+    color: #fff;
+}
 
 section#contact .form-group {
     margin-bottom: 25px;
@@ -713,6 +730,8 @@ section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 20px;
     border-radius: 0px;
+    background-color: transparent;
+    border-color:#fff;
 }
 
 section#contact .form-group input.form-control {
@@ -763,7 +782,7 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
-    background-color: #222
+    background-color: #fff;
 }
 
 footer span.copyright {
@@ -771,7 +790,7 @@ footer span.copyright {
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
-    color:#fff;
+    color:#222;
 }
 
 footer ul.quicklinks {
@@ -796,7 +815,7 @@ ul.social-buttons li a {
     outline: 0;
     background-color: transparent;
     padding: 0;
-    color:#fff;
+    color:#222;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
