@@ -4,6 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.display-none{
+    display:none;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -126,6 +130,7 @@ fieldset[disabled] .btn-primary.active {
     color: #AAB0B3;
     text-align: left;
     background-color: transparent;
+    border-radius: 0px;
 }
 
 .btn-xl:hover,
@@ -139,7 +144,8 @@ fieldset[disabled] .btn-primary.active {
     -ms-transition: all .5s ease;
     transition: all .5s ease;
     background-color: transparent;
-    border: thin solid #222;
+    border: thin solid rgb(59,134,134);
+    color:rgb(59,134,134);
 }
 
 .btn-xl:active,
@@ -172,8 +178,6 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
-
-
 #cssmenu ul li {
   display: inline-block;
   padding: 0;
@@ -185,19 +189,41 @@ fieldset[disabled] .btn-xl.active {
 #cssmenu.align-center ul {
   text-align: center;
 }
+
 #cssmenu ul li a {
-  color: #AAB0B3;
-  text-decoration: none;
-  display: block;
-  position: relative;
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -ms-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -ms-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
 }
+
 #cssmenu ul li a:hover {
-  color:#fff;
+  color:rgb(59,134,134);
+}
+
+.navbar-default.navbar-shrink #cssmenu ul li a{
+    color: #222;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -ms-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+
+.navbar-default.navbar-shrink #cssmenu ul li a:hover {
+  color:rgb(59,134,134);
+}
+
+.navbar-default.navbar-shrink #cssmenu ul li.active a {
+    color: rgb(59,134,134);
 }
 
 #cssmenu ul li a:before {
@@ -209,7 +235,7 @@ fieldset[disabled] .btn-xl.active {
   height: 3px;
   width: 0;
   /*Underline color*/
-  background: #fff;
+  background: rgb(59,134,134);;
   -webkit-transition: width .25s;
   -moz-transition: width .25s;
   -ms-transition: width .25s;
@@ -220,9 +246,7 @@ fieldset[disabled] .btn-xl.active {
 #cssmenu ul li:last-child > a:after {
   display: none;
 }
-#cssmenu ul li.active a {
-  color: #fff;
-}
+
 #cssmenu ul li.active a:before {
   width: 100%;
 }
@@ -257,17 +281,17 @@ fieldset[disabled] .btn-xl.active {
 }
 
 /*For text in the top left*/
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand:focus {
     font-family:"Pacifico","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #AAB0B3;
+    color: #fff;
 }
 
+
 /*Hovered text in the top left*/
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-    color: #fff;
+.navbar-default .navbar-brand:hover{
+    color: rgb(59,134,134);
 }
 
 /*Collapse Menu*/
@@ -310,15 +334,18 @@ fieldset[disabled] .btn-xl.active {
         padding: 10px 0;
         border: 0;
         background-color: transparent;
-        -webkit-transition: padding .5s;
-        -moz-transition: padding .5s;
-        transition: padding .5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
     }
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(255,255,255,0.95);
         border-bottom: thin solid #222;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
     }
 
     /*Top left Inside Header*/
@@ -332,13 +359,12 @@ fieldset[disabled] .btn-xl.active {
     /*Top left Outside Header*/
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        color: #222;
     }
     
-    .navbar-default.navbar-shrink .navbar-brand:hover,
-    .navbar-default.navbar-shrink .navbar-brand:focus,
-    .navbar-default.navbar-shrink .navbar-brand:active,
-    .navbar-default.navbar-shrink .navbar-brand.active {
+    .navbar-default.navbar-shrink .navbar-brand:hover{
         font-size:2em;
+        color: rgb(59,134,134);
     }
 
     /*Top right elements when it is out of the header*/
@@ -417,24 +443,25 @@ header .btn-xl:focus{
 
 header .btn-xl:hover,
 header .open .dropdown-toggle.btn-xl{
-    background-color: #fff;
-    border: thin solid #fff;
-    color: #222;
+    /*background-color: rgb(59,134,134);*/
+    border: thin solid rgb(59,134,134);
+    color: rgb(59,134,134);
 }
 
-.fa-angle-double-down{
-    width:60px;
-}
-
-.fa-angle-double-down:hover,
+.fa-angle-double-down,
 .fa-angle-double-down:focus,
 .fa-angle-double-down:active{
+    width:60px;
+    color: #AAB0B3;
+}
+
+.fa-angle-double-down:hover{
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
     -ms-transition: all .5s ease;
     transition: all .5s ease;
-    color: #fff;
+    color: rgb(59,134,134);
 }
 
 @media(min-width:768px) {
@@ -489,11 +516,12 @@ section#about p{
         margin-right: 10%;
 }
 
+
 @media(min-width: 768px){
     section#about p{
         margin-left: 15%;
         margin-right: 15%;
-        font-size: 1.3em;
+        font-size: 1.15em;
     }
 }
 
@@ -503,14 +531,24 @@ section#about p{
     /*The following two are used to align vertically*/
     display: table-cell;
     vertical-align: middle;
+    background-color: #fff;
 }
 
 #portfolio img{
-    max-height: 289px;
+    max-height: 100%;
+    max-width: 100%;
     display: block;
     /*The following two are used to center horizontally*/
     margin-left: auto;
     margin-right: auto;
+}
+#portfolio .fill-container{
+    height: 100%;
+    width: 100%;
+}
+
+section#portfolio .portfolio-item .portfolio-hover-content .text-muted{
+    color:#fff;
 }
 
 @media(min-width:768px){
@@ -519,10 +557,10 @@ section#about p{
         height:249px;
     }
 
-    #portfolio img{
+/*    #portfolio img{
         max-height: 249px;
         display: block;
-    }
+    }*/
 }
 
 @media(min-width:992px){
@@ -531,10 +569,10 @@ section#about p{
         height:212px;
     }
 
-    #portfolio img{
+/*    #portfolio img{
         max-height: 212px;
         display: block;
-    }
+    }*/
 }
 
 @media(min-width:1200px){
@@ -543,10 +581,10 @@ section#about p{
         height:260px;
     }
 
-    #portfolio img{
+/*    #portfolio img{
         max-height: 260px;
         display: block;
-    }
+    }*/
 }
 
 #portfolio .portfolio-item {
@@ -566,7 +604,7 @@ section#about p{
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(0, 0, 0,.6);
+    background: rgba(59,134,134, 0.8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -666,6 +704,7 @@ section#contact p{
     color:#7F8C8D;
 }
 
+
 section#contact .form-group {
     margin-bottom: 25px;
 }
@@ -673,6 +712,7 @@ section#contact .form-group {
 section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 20px;
+    border-radius: 0px;
 }
 
 section#contact .form-group input.form-control {
@@ -680,11 +720,11 @@ section#contact .form-group input.form-control {
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px;
+    height: 150px;
 }
 
 section#contact .form-control:focus {
-    border-color: #222;
+    border-color: rgb(59,134,134);
     box-shadow: none;
 }
 
@@ -756,21 +796,19 @@ ul.social-buttons li a {
     outline: 0;
     background-color: transparent;
     padding: 0;
-    color:#AAB0B3;
+    color:#fff;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
 }
 
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
+ul.social-buttons li a:hover {
     -webkit-transition: all .75s ease;
     -moz-transition: all .75s ease;
     -o-transition: all .75s ease;
     -ms-transition: all .75s ease;
     transition: all .75s ease;
-    color:#fff;
+    color:rgb(59,134,134);
 }
 
 .btn:focus,

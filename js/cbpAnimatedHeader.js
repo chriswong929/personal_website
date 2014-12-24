@@ -16,7 +16,7 @@ var cbpAnimatedHeader = (function() {
 		// Use this to change when the header toggles
 		// 565 for toronto_at_night_black_and_white_edit_by_falcon912-d5nkmrv
 		// changeHeaderOn = 565;
-		changeHeaderOn=$(window).height()-200;
+		changeHeaderOn=$(window).height()-80;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
