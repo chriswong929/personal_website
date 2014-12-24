@@ -10,7 +10,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans","Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 html,body{
@@ -54,7 +54,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Quicksand, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -68,11 +68,12 @@ h6 {
 
 .btn-primary {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Quicksand, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #AAB0B3;
     background-color: transparent;
     border: thin solid #AAB0B3;
+    border-radius: 0;
 }
 
 .btn-primary:hover,
@@ -124,7 +125,7 @@ fieldset[disabled] .btn-primary.active {
     padding: 20px 40px;
     border:thin solid #fff;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Quicksand, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #AAB0B3;
@@ -407,29 +408,28 @@ header .fade_in_txt{
     padding-top: 50px;
 }
 
-header .intro-text {
-    padding-top: 200px;
-    padding-bottom: 50px;
-}
 
 header .intro-text .intro-lead-in {
-    margin-bottom: 15px;
-    font-family: Montserrat,"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 50px;
     font-size: 18px;
     line-height: 22px;
     margin-right: -10px;
 }
 
-header .intro-text .intro-heading {
+header .intro-text .intro-heading h1{
     margin-bottom: 25px;
-    font-family: "Press Start 2P",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 20px;
+    font-size: 60px;
     font-weight: 700;
-    line-height: 30px;
+    margin-top: -10px;
+    /*line-height: 30px;*/
 }
-
+@media(max-width:768px){
+    header .intro-text .intro-heading h1{
+        margin-top: 80px;
+    }
+}
 header .intro-text .intro-scroll{
-    padding-top: 75px;
+    margin-top: 50px;
 }
 
 
